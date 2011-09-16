@@ -6,6 +6,7 @@ package inf2005;
 
 import java.util.Date;
 import java.text.SimpleDateFormat;
+import java.util.Random;
 
 /**
  *
@@ -27,4 +28,13 @@ public class GitTest {
         StringBuilder todayAsString = new StringBuilder(dateFormatter.format(today));
         return todayAsString.toString();
     }
+    private int giveRandomInt(){
+        
+        Random randomGenerator = new Random();
+        int randomNumber = randomGenerator.nextInt(101);
+        
+        
+        return randomNumber;
+    }
+    
 }
