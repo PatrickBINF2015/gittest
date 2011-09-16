@@ -1,19 +1,17 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.lpcmedia.test;
 
 /**
  *
  * @author patrick
  */
-public class github {
+public class GitHub {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public void main(String[] args) {
+        System.out.print(this.sayHello(args[0]));
+    }
+    private String sayHello(String arg) {
+        // See if changes are getting documente 
+        return arg+" hello";
+
     }
 }
