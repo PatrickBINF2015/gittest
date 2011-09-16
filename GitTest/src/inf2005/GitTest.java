@@ -4,6 +4,9 @@
  */
 package inf2005;
 
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
 /**
  *
  * @author patrick
@@ -15,5 +18,13 @@ public class GitTest {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+    }
+    private String sayTheDateTime(){
+        Date today = new Date();
+        
+        SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyyMMddhhmmss");
+        
+        StringBuilder todayAsString = new StringBuilder(dateFormatter.format(today));
+        return todayAsString.toString();
     }
 }
